@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" media="screen" href="parcial/static/style.css" >
+<script src="assets/webcam/webcam.js" type="text/javascript" ></script>
+<script src="assets/js/keyboard.js" type="text/javascript"></script>
+</head>
+<title>CFE: Registro de visitantes</title>
+<body>
+
+
+	<div id="ding-button" class="ding-yellow"> </div>
+
+	<div id="header" class="title-text">
+	GRTP: Sistema de registro de visitantes
+	</div>
+
+
+	<div class="clear"></div>
+
+	<div id="wrapper">
+		<div id="formulario_de_captura">
+			<div class="etiqueta_formulario">
+				Nombre completo:
+			</div>
+			<input  id="nombre" class="input" type ="text" onclick="changeFocused(this)" autocomplete="on">
+			<div class="etiqueta_formulario" >
+				Empresa de procedencia:	
+			</div>
+			<input  id="empresa" class="input" type ="text" onclick="changeFocused(this)" autocomplete="on">
+			<div class="etiqueta_formulario">
+				Departamento/Persona a quien visita:
+			</div>
+			<input  id="interesado" class="input" type ="text" onclick="changeFocused(this)" autocomplete="on">
+		
+			<br><br>
+			<div class="centrado">
+				<button class="input_submit"  name="registro" value="true" onclick="return registrar();">Registrar</button>
+			</div>
+			<div style="clear:both;"></div>
+				<br>	
+			<div id="teclado">
+				<div class="line-wrapper">
+				<div id="letra-Q" class="tecla" onclick="keyClick(this)">Q</div>
+				<div id="letra-W" class="tecla" onclick="keyClick(this)">W</div>
+				<div id="letra-E" class="tecla" onclick="keyClick(this)">E</div>
+				<div id="letra-R" class="tecla" onclick="keyClick(this)">R</div>
+				<div id="letra-T" class="tecla" onclick="keyClick(this)">T</div>
+				<div id="letra-Y" class="tecla" onclick="keyClick(this)">Y</div>
+				<div id="letra-U" class="tecla" onclick="keyClick(this)">U</div>
+				<div id="letra-I" class="tecla" onclick="keyClick(this)">I</div>
+				<div id="letra-O" class="tecla" onclick="keyClick(this)">O</div>
+				<div id="letra-P" class="tecla" onclick="keyClick(this)">P</div>
+				<div style="clear:both;"></div>
+				</div>
+				<div class="line-wrapper">
+				<div id="letra-A" class="tecla" onclick="keyClick(this)">A</div>
+				<div id="letra-S" class="tecla" onclick="keyClick(this)">S</div>
+				<div id="letra-D" class="tecla" onclick="keyClick(this)">D</div>
+				<div id="letra-F" class="tecla" onclick="keyClick(this)">F</div>
+				<div id="letra-G" class="tecla" onclick="keyClick(this)">G</div>
+				<div id="letra-H" class="tecla" onclick="keyClick(this)">H</div>
+				<div id="letra-J" class="tecla" onclick="keyClick(this)">J</div>
+				<div id="letra-K" class="tecla" onclick="keyClick(this)">K</div>
+				<div id="letra-L" class="tecla" onclick="keyClick(this)">L</div>
+				<div id="letra-Ñ" class="tecla" onclick="keyClick(this)">Ñ</div>
+				<div style="clear:both;"></div>
+				</div>
+				<div class="line-wrapper">
+				<div id="letra-Z" class="tecla" onclick="keyClick(this)">Z</div>
+				<div id="letra-X" class="tecla" onclick="keyClick(this)">X</div>
+				<div id="letra-C" class="tecla" onclick="keyClick(this)">C</div>
+				<div id="letra-V" class="tecla" onclick="keyClick(this)">V</div>
+				<div id="letra-B" class="tecla" onclick="keyClick(this)">B</div>
+				<div id="letra-N" class="tecla" onclick="keyClick(this)">N</div>
+				<div id="letra-M" class="tecla" onclick="keyClick(this)">M</div>
+				<div id="letra-void" class="tecla">&nbsp;</div>
+				<div id="letra-void" class="tecla">&nbsp;</div>
+				<div id="letra-void" class="tecla">&nbsp;</div>
+				<div style="clear:both;"></div>
+				</div>
+				<div class="line-wrapper">
+					<div id="letra-space" class="tecla space" onclick="keyClick(this)"> Espacio </div>
+					<div id="letra-backspace" class="tecla backspace" onclick="keyClick(this)"> Borrar </div>
+				<div style="clear:both;"></div>
+				</div>
+			</div>	
+		</div>
+		<div id="wrap-list">
+			<div id="camera">
+		
+			</div>
+		<div id="listado-visitantes">
+			<?php 
+			include 'listado.php';
+			?>
+		</div>
+	</div>
+  	<div style="clear:both;"></div>
+    </body>
+</html>

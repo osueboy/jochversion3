@@ -1,0 +1,251 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;
+
+	}
+
+body {	line-height: 1;background-color: lightgray;}
+h1{font-weight:bold; font-size: 14px; padding: 5px 20px; text-align:center;}
+h2{font-weight: bold; font-size: 14px; padding: 5px 20px;}
+ol, ul {
+	list-style: none;
+}
+.bold {  font-weight:bold; }
+.printp { float: left; width: 50%; font-size:12px; line-height:25px; padding: 5px 20px; display:block; text-align:left;
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+#formulario_de_captura {
+	padding:  0px 50px;
+	width: 70%;
+	height: 830px;
+
+	font-size: 40px;
+	font-family:  georgia;
+	float:left;
+	clear: left;
+}
+
+
+#listado-visitantes {
+ float:left;
+ width:22%;
+ height: 830px;
+ overflow-y:scroll;
+ overflow-x:hidden;
+ border-left: 4px solid #333;
+ -moz-box-sizing:
+border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+/* camara top a 0 o -1000 para mostrar u ocultar */
+#camera {
+
+position: absolute;
+top: 0;
+right:0;
+width:500px;
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+background-color: green;
+}
+
+
+.listado {
+padding: 5px;
+margin: 0;
+ width:100%;
+ color: #333;
+ background-color: #ddd;
+ border: 0;
+ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ cursor:pointer;
+ font-size: 10px;
+ font-family: arial;
+}
+.listado:hover{
+background-color: #fff;
+}
+
+#wrapper {
+
+}
+.etiqueta_formulario {
+	padding: 10px;
+	width: 100%;
+	display: inline-box;
+}
+
+.input {
+	width:100%;
+	height: 50px;
+	font-size: 40px;
+	display: inline-box;
+	border-radius: 0;
+	border: 0;
+	background-color: #eee;
+}
+.input:hover {
+background-color: #fff;
+}
+
+.input_submit {
+
+padding: 12px;
+text-align: center;
+font-size: 40px;
+color: white;
+background-color: #333;
+font-family:  georgia;
+border: 1px solid #333;
+border-radius: 6px;
+cursor:pointer;
+}
+
+#teclado {
+line-height: 40px;
+margin: 0 auto;
+border-radius: 3px;
+}
+.datetime-entrada,.field-entrada {
+width: 35%;
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+padding: 5px;
+color: #333;
+background-color: #A1DBFF;
+float:left;
+overflow: hidden;
+border-bottom: 1px solid #333;
+border-left: 1px solid #333;
+font-weight: bold;
+}
+.field-entrada {
+width: 65%;
+background-color: #30B0FF;
+font-weight: normal;
+border-right: 1px solid #333;
+}
+
+.top {
+border-top: 1px solid #333;
+}
+
+.centrado {
+text-align: center;
+	width:100%;
+	clear:both;
+}
+.line-wrapper{
+margin: 0 auto;
+background-color: #666;
+}
+.tecla {
+text-align: center;
+background-color: #999;
+float:left;
+padding: 15px 7px 0px 7px;
+margin: 5px;
+display: inline;
+min-width: 7.286%;
+min-height: 60px;
+border-radius: 3px;
+cursor:pointer;
+}
+
+.tecla:hover {
+color: white;
+}
+
+.space {
+min-width: 70%;
+}
+.backspace {
+min-width: 22%;
+}
+
+#ding-button {
+position:absolute;
+top: 38px;
+left:800px;
+width:100px;
+height:48px;
+border-radius: 25px;
+padding: 5px 10px;
+margin: 5px;
+font-size: 24px;
+font-family: arial;
+}
+
+.ding-yellow {
+background-color: yellow;
+}
+.ding-green {
+background-color:#00FF00;
+}
+.ding-red {
+    background-color:#FF0000;
+}
+.title-text {
+	padding:10px 12px;
+	text-align:center;
+	font-size:20px;
+	font-weight: 700;
+	font-family:Georgia;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	text-shadow: 2px 2px 3px #333;
+background-color:#666;
+}
+
+
+table {
+width: 100%;
+background-color: orange;
+padding: 5px;
+border: 1px solid #333;
+cursor:pointer;
+overflow-x:hidden;
+}
+tr {
+padding: 3px;
+}
+
+th {
+border-right: 1px solid #333;
+border-bottom: 1px solid #333;
+padding: 5px 3px;
+text-align: left;
+}
+
+td {
+background-color: #fff;
+border-right: 1px solid #333;
+border-bottom: 1px solid #333;
+padding: 2px 3px;
+}
+.t0 {
+width: 0px;
+}
+
+#title-visitantes {
+width:100%;
+background-color: yellow;
+font-size: 24px;
+text-align: center;
+font-variant: small-caps;
+}
+.ttitle {
+background-color: #FFF2BA;
+}

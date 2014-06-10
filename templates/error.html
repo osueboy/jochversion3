@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+Listado de Errores
+{{ x.as_p }}
+
+
+
+{% if x.errors %}
+    {% for field in x.errors %}
+        {% for error in field.errors %}
+            <div class="alert alert-error">
+                {{ error|escape }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+    {% for error in form.non_field_errors %}
+        <div class="alert alert-error">
+            {{ error|escape }}
+        </div>
+    {% endfor %}
+{% endif %}
+</body>
+</html>
